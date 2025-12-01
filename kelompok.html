@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelompok BIB</title>
+
+<style>
+    :root{
+        --bg: #0f172a;
+        --text: #ffffff;
+        --subtitle: #cbd5e1;
+        --card: rgba(255,255,255,0.05);
+        --card-border: rgba(255,255,255,0.1);
+    }
+
+    body.light{
+        --bg: #f5f7fa;
+        --text: #0f172a;
+        --subtitle: #475569;
+        --card: rgba(0,0,0,0.04);
+        --card-border: rgba(0,0,0,0.1);
+    }
+
+    body{
+        margin:0;
+        font-family: "Inter", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        transition: background 0.4s, color 0.4s;
+        padding:40px 0;
+    }
+
+    .container{
+        width:90%;
+        max-width:900px;
+        margin:auto;
+        text-align:center;
+    }
+
+    h1{
+        font-size:32px;
+        margin-bottom:10px;
+    }
+
+    .subtitle{
+        color: var(--subtitle);
+        margin-bottom:35px;
+        transition: color 0.4s;
+    }
+
+    .members{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+        gap:24px;
+    }
+
+    .card{
+        background: var(--card);
+        padding:20px;
+        border-radius:16px;
+        backdrop-filter: blur(10px);
+        border:1px solid var(--card-border);
+        transition:0.3s, background 0.4s, border 0.4s;
+    }
+
+    .card:hover{
+        transform: translateY(-8px);
+        box-shadow:0 10px 32px rgba(0,0,0,0.35);
+    }
+
+    .avatar{
+        width:90px;
+        height:90px;
+        margin:auto;
+        border-radius:50%;
+        overflow:hidden;
+        background:#334155;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-bottom:12px;
+    }
+
+    .avatar img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+    .name{
+        font-size:18px;
+        font-weight:600;
+        margin-top:4px;
+    }
+
+    footer{
+        margin-top:40px;
+        color: var(--subtitle);
+        font-size:14px;
+    }
+
+    .toggle-btn{
+        padding:10px 16px;
+        border:none;
+        border-radius:10px;
+        background:#4f46e5;
+        color:white;
+        font-weight:600;
+        cursor:pointer;
+        margin-bottom:24px;
+        transition:0.3s;
+    }
+
+    .toggle-btn:hover{
+        background:#4338ca;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Kelompok BIB</h1>
+    <p class="subtitle">Rakha Damarjati · Arielyan Sultan Phasay · Hanif Khoirullah · Jonatan Farel Pratama</p>
+
+    <div class="members">
+
+        <!-- Rakha -->
+        <div class="card">
+            <div class="avatar">
+                <img src="https://i.ytimg.com/vi/R1YJ-iTP9Dg/maxres2.jpg?sqp=-oaymwEoCIAKENAF8quKqQMcGADwAQH4AbYIgAK4CIoCDAgAEAEYICBaKH8wDw==&rs=AOn4CLD_IIFT6S_E3Ew7PbH1lBcDoGFNZQ" alt="Foto Rakha">
+            </div>
+            <div class="name">Rakha Damarjati</div>
+            <div><p>Sopir 8 jam HM Lombok</p></div>
+        </div>
+
+        <!-- Arielyan -->
+        <div class="card">
+            <div class="avatar">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.aCtexF7b2rragnhpxQ_rRwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Foto Arielyan">
+            </div>
+            <div class="name">Arielyan Sultan Phasay</div>
+            <div><p>Teknisi custom room</p></div>
+        </div>
+
+        <!-- Hanif -->
+        <div class="card">
+            <div class="avatar">
+                <img src="https://i.pinimg.com/200x150/e3/b1/cc/e3b1cc8d3dd23f82c57c87db92d82efa.jpg" alt="Foto Hanif">
+            </div>
+            <div class="name">Hanif Khoirullah</div>
+            <div><p>Meneliti link</p></div>
+        </div>
+
+        <!-- Farel -->
+        <div class="card">
+            <div class="avatar">
+                <img src="https://th.bing.com/th/id/OIP.NdTegjJBYQJaSouuGgwcyAHaFl?w=247&h=187&c=7&r=0&o=7&pid=1.7&rm=3" alt="Foto Farel">
+            </div>
+            <div class="name">Jonatan Farel Pratama</div>
+            <div>Hobi memasak pare</div>
+        </div>
+
+    </div>
+
+    <footer>
+        Dibuat dengan kelompok kontrakan kami ❤️🌙 — 2025
+    </footer>
+
+</div>
+
+</script>
+
+</body>
+</html>
